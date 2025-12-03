@@ -18,6 +18,20 @@
     h2 {
         text-align: center;
     }
+    h3 {
+        text-align: center;
+    }
+    .form-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .form-row label {
+        width: 200px;
+    }
+    select {
+        flex:1;
+    }
 </style>
 </head>
 <body>
@@ -42,11 +56,11 @@
         <input type="radio" id="female" name="sex" value="female"> หญิง
         <br><br>
        
- <div style="display:flex; align-items:flex-start; gap:30px;">
+ <div class="form-row">
 
     <label for="faculty"><b>สังกัดคณะ</b></label>
 
-    <select name="faculty" size="10">
+    <select id="faculty" size="9">
         <option>วิทยาศาสตร์</option>
         <option>วิทยาการคอมพิวเตอร์</option>
         <option>ครุศาสตร์</option>

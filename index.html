@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>แบบสอบถาม</title>
+<title>Web form</title>
 <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
@@ -10,28 +10,15 @@
     .container {
         width: 500px;
         margin: auto;
-        background: #f0e4ce;
+        background: #f5ca79;
         padding: 15px;
         border-radius: 8px;
-        border: 1px solid #d2b48c;
+        border: 1px solid #df8816;
     }
     h2 {
         text-align: center;
     }
-    h3 {
-        text-align: center;
-    }
-    .form-row {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-    .form-row label {
-        width: 200px;
-    }
-    select {
-        flex:1;
-    }
+    
 </style>
 </head>
 <body>
@@ -44,21 +31,18 @@
 
     <form>
 
-        <label for="Fullname"><b>  ชื่อ-นามสกุล </b></label>       
-        <input type="text" name="fullname" size="40">
-         <br>
-        <label for="Stydenid"><b> รหัสนักศึกษา </b></label>       
-        <input type="text" name="studentid" size="40">
-         <br>
+        <label style="display:inline-block; width:100px ">ชื่อ-นามสกุล</label>       
+        <input type="text" style="width:200px"><br>
+        <label style="display:inline-block; width:100px ">รหัสนักศึกษา</label>       
+        <input type="text" style="width:200px"><br>
 
         <label for ="sex"><br>เพศ</label>
         <input type="radio" id="male" name="sex " value="male"> ชาย
         <input type="radio" id="female" name="sex" value="female"> หญิง
-        <br><br>
-       
- <div class="form-row">
+        <br><br>      
 
-    <label for="faculty"><b>สังกัดคณะ</b></label>
+    <label for="faculty" style="display:inline-block; width:100px; vertical-align: top;"> 
+    <br><br> <b>สังกัดคณะ </b> </label>
 
     <select id="faculty" size="9">
         <option>วิทยาศาสตร์</option>
@@ -73,14 +57,15 @@
         <option>แพทย์แผนไทยและทางเลือก</option>
         <option>นิติศาสตร์</option>
     </select>
+    <br><br>
 
-</div>
+
         <b>แม่สีที่ชอบ</b>
         <br>
         <input type="checkbox" name="color" value=""> สีแดง
         <input type="checkbox" name="color" value=""> สีเขียว
         <input type="checkbox" name="color" value=""> สีน้ำเงิน
-         <br>
+        <br>
 
         <b>ผลไม้ที่ชอบ</b>
         <br>
@@ -96,11 +81,12 @@
         <br>
         <input type="checkbox" name="food" value=""> ต้มยำกุ้ง
         <input type="checkbox" name="food" value=""> ไข่เจียวหมูสับ
-        <input type="checkbox" name="food" value=""> แกงข่าไก่
-        <input type="checkbox" name="food" value=""> แกงเขียวหวานไก่ <br>
+        <input type="checkbox" name="food" value=""> แกงข่าไก่ <br>
+        <input type="checkbox" name="food" value=""> แกงเขียวหวานไก่ 
         <input type="checkbox" name="food" value=""> ผัดไทย 
         <input type="checkbox" name="food" value=""> ราดหน้าหมี่กรอบ
         <br><br>
+
         <div style="text-align:center;">
         <input type="submit" value="บันทึก">
         </div>
